@@ -1,0 +1,98 @@
+$darkBlue: #041a9b;
+$grey: #666666;
+$lightBlue: #809dc4;
+$yellow: #e59319;
+
+$heading: 'Merriweather', serif;
+$body: 'Helvetica', sans-serif;
+
+
+@import "partials/setup.scss";
+@import "partials/navBar.scss";
+@import "partials/links.scss";
+@import "partials/footer.scss";
+@import "partials/about.scss";
+@import "partials/home.scss";
+@import "partials/signin.scss";
+@import "partials/contact.scss";
+@import "partials/slider.scss";
+@import "partials/userInputColor.scss";
+@import "partials/userinputtext.scss";
+@import "partials/userlogoicon.scss";
+@import "partials/mockUp.scss";
+@import "partials/logoMark.scss";
+
+
+body {
+    background-color: white;
+}
+
+.mainFont {
+    font-family: $heading;
+    color: $grey;
+}
+
+h1, h2 {
+    font-family: $heading;
+    color: $grey;
+}
+
+.app-container {
+    margin: 20px;
+    @media (max-width: 500px) {
+        height: 100vh;
+        border: none;
+    }
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    font-family: $body;
+}
+
+a {
+    text-decoration: none;
+    font-family: $heading;
+    color:$grey;
+}
+
+button {
+    border: none;
+    background-color: none;
+    &:hover {
+        transform: scale(1.05);
+        transition: all .5s ease-in-out;
+    }
+}
+.link-btn, .button {
+    background: #e59319;
+    font-family: $heading;
+    border-radius: 12px;
+    padding: 5px 30px;
+    color: white;
+}
+
+.home-container,
+.about-container,
+.contact-container,
+.myBrands-container,
+.uitWrapper, .uliWrapper, .signin, .userLogoMark-container
+ {
+    height: 100vh;
+}
+
+//HOMEPAGE STYLES 
+//SLIDER STYLES
+
+
+
+
+
+
+

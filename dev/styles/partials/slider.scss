@@ -1,0 +1,23 @@
+.slider {
+    max-width: 100%;
+    @media (max-width: 500px) {
+        width: 95%;
+    }
+    img {
+     width: 100%;
+     height: auto;
+    }
+}
+
+ .slick-slide{
+ margin: 0;
+ 
+}
+
+.slick-list{
+  max-height: 351px;
+  max-width: 100%;
+}
+.slider-img-container {
+    width: 100%;
+}

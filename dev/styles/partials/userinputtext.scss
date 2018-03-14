@@ -1,0 +1,78 @@
+.uitWrapper {
+    width: 100%;
+
+    form {
+        width: 45%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 200px;
+
+        label {
+            width: 100%;
+            margin: 0 auto;
+            float: left;
+            font-size: 24px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            float: left;
+            margin: 25px 0;
+        }
+
+        input[type="search"]:nth-child(2) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .searchHolder {
+            width: 100%;
+            clear: both;
+        
+        input[type="search"] {
+            width: 30%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: left;
+            
+        }
+
+    }
+
+        .btnHolder {
+            text-align: center;
+            width: 100%;
+            padding-top: 50px;
+
+        input[type="submit"] {
+            width: 200px;
+            height: 35px;
+        }
+
+    }
+}
+
+.linkContainer {
+    width: 5%;
+    float: left;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+}
+
+@media (max-width: 460px) {
+    input#query, input#query2, input#query3 {
+            width: 100%;
+            float: none;
+        }
+    input#query2 {
+        margin-left: 0;
+    }
+    .uitWrapper form {
+        padding-top: 80px;
+     }
+}
