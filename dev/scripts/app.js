@@ -26,16 +26,16 @@ import {
 
 
   // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCUZzQyrcvBIXkXCUbNrsM6bWmo-tE6SSQ",
+    authDomain: "branditnishi.firebaseapp.com",
+    databaseURL: "https://branditnishi.firebaseio.com",
+    projectId: "branditnishi",
+    storageBucket: "",
+    messagingSenderId: "648211476284"
+  };
+  firebase.initializeApp(config);
 
-var config = {
-  apiKey: "AIzaSyD9jDcaoMT9Tc8KnBiMKRXjlaKsQg3PCzU",
-  authDomain: "branditproject.firebaseapp.com",
-  databaseURL: "https://branditproject.firebaseio.com",
-  projectId: "branditproject",
-  storageBucket: "branditproject.appspot.com",
-  messagingSenderId: "734808400111"
-};
-firebase.initializeApp(config);
 
 
 
