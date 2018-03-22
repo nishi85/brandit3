@@ -4,7 +4,7 @@ const LogoMarkThree = (props) => {
 
     return (
         <div className="logo-03-mark">
-            <img src="./dev/assets/logo-03.svg" alt="" />
+            <img src="./public/assets/logo-03.svg" alt="" />
             <div className="logo-03">
                 <img src={props.choice} alt="" />
             </div>

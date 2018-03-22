@@ -6,7 +6,7 @@ class Contact extends React.Component {
             <div className="contact-container">
                 <div className="contact">
                     <div className="contact-text">
-                        <img src="./dev/assets/brandItLogoOrange.png" alt="" />
+                        <img src="./public/assets/brandItLogoOrange.png" alt="" />
                         <h2><span className="orangeText">BrandIt</span></h2>
                         <p> 213 Sterling Road,</p>
                         <p> Studio 200B Toronto, </p>
