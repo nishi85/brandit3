@@ -92,7 +92,7 @@ class UserLogoMark extends React.Component {
                                 }
                             }
                         }>
-                        <img src="./public/assets/arrow.svg" alt="" />
+                        <img src="./dev/assets/arrow.svg" alt="" />
                     </Link>
                 </div>
             </div>

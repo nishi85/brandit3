@@ -1,0 +1,112 @@
+.uliWrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    @media (max-width: 600px) {
+        padding-top: 25px;
+    }
+   
+
+     h2 {
+        text-align: center;
+    }
+
+
+    .logoSelector {
+        width: calc(60% - 40px);
+        float: left;
+        margin-left: 40px;
+        @media (max-width: 600px) {
+            width: calc(90% - 40px);
+            float: none;
+        }
+
+   
+.icon_ctn {
+    width: 30%;
+    float: left;
+    padding: 5px;
+    button {
+        background: white;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .icon_btn {
+        border: 1px solid red;
+    }
+    }
+
+    }
+
+    .logoSelection {
+        max-width: 30%;
+        float: left;
+        margin: 0 auto;
+        @media (max-width: 600px) {
+            float: none;
+            width: 100%;
+        }
+        .logoContainer {
+            width: 90%;
+            padding: 10px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                background: white;
+            }
+        }
+    }
+
+
+    .linkContainer {
+        width: 5%;
+        float: left;
+                position: absolute;
+                left: 95%;
+                top: 50%;
+
+                transform: translate(-50%, -50%);
+    }
+
+
+
+}
+
+@media (max-width: 1230px) {
+    .icon_ctn {
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    .logoSelection {
+            max-width: 30%;
+            float: left;
+            margin: 0 auto;
+            .logoContainer {
+                width: 70%;
+                padding: 10px;
+                margin: 0 auto;
+                img {
+                    width: 70%;
+                    background: white;
+                }
+            }
+        }
+    }
+
+
+@media (max-width: 600px) {
+    .logoSelector {
+        
+    }
+    .logoSelection {
+        
+    }
+    .logoContainer {
+        width: 60%;
+    }
+}

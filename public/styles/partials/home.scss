@@ -1,0 +1,46 @@
+.home-left, .home-right {
+    width: 50%;
+    display: inline-block;
+}
+
+.home-left{
+    img {
+        height: 220px;
+        width: 220px;
+    }   
+    p {
+        max-width: 350px;
+    }
+}
+
+.home {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.orange-button {
+    background-color: #e59319 !important;
+}
+
+@media (max-width: 960px) {
+    .home-left, .home-right {
+    width: 100%;
+    display: inline-block;
+    }
+    .home-right {
+        padding-top: 20px;
+    }
+    .home-left {
+        text-align: center;
+    }
+    .home {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        padding: 0;
+    }
+}

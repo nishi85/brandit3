@@ -82,7 +82,7 @@ class UserInputColor extends React.Component {
                                 color: this.state.selectedMainColor
                             }
                         }
-                    }><img src="./public/assets/arrow.svg" alt="" /></Link>
+                    }><img src="./dev/assets/arrow.svg" alt="" /></Link>
                 </div>
             </div>
         )

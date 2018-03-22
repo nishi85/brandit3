@@ -3,7 +3,7 @@ import React from "react";
 const LogoMarkTwo = (props) => {
     return (
         <div className="logo-02-mark">
-            <img src="./public/assets/logo-02.svg" alt="" />
+            <img src="./dev/assets/logo-02.svg" alt="" />
             <div className="logo-02">
                 <img src={props.choice} alt="" />
             </div>

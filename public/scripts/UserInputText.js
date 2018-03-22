@@ -155,7 +155,7 @@ class UserInputText extends React.Component {
             state: { icons: this.state.icons, query: this.state.query, icons2: this.state.icons2, query2: this.state.query2, icons3: this.state.icons3, query3: this.state.query3, companyName: this.state.companyName }
           }}>
             
-              <img src="./public/assets/arrow.svg" alt="" />
+              <img src="./dev/assets/arrow.svg" alt="" />
             
           </Link>
         </div>

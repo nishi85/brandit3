@@ -19,13 +19,13 @@ class Gallery extends React.Component {
         return (
             <Slider {...settings} className={'slider'}>
                 <div className="slider-img-container">
-                    <img src="./public/assets/slider-01.jpg" alt="" />
+                    <img src="./dev/assets/slider-01.jpg" alt="" />
                 </div>
                 <div className="slider-img-container">
-                    <img src="./public/assets/slider-02.jpg" alt="" />
+                    <img src="./dev/assets/slider-02.jpg" alt="" />
                 </div>
                 <div className="slider-img-container">
-                    <img src="./public/assets/slider-03.jpg" alt="" />
+                    <img src="./dev/assets/slider-03.jpg" alt="" />
                 </div>
             </Slider>
         )

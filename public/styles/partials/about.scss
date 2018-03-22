@@ -1,0 +1,54 @@
+//ABOUT COMPONENT STYLES
+
+.about {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 100px;
+}
+
+.about-image {
+    max-width: 40%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 884px) {
+    .about-text, .about-image {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 220px;
+        width: 220px;
+    }
+
+    .about-text {
+        padding: 0 50px;
+    }
+
+    .about, .app-container {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+     .about-text {
+        padding: 0 20px;
+    }
+}

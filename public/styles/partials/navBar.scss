@@ -1,0 +1,52 @@
+.mainHeader {
+    margin: 20px 50px; 
+    height: 20px;  
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+    position: relative;
+    a:hover::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            margin: 0 auto;
+            left: 0;
+            top: 25px;
+            width: 100%;
+            background: #e59319;
+        }
+}
+
+@media (max-width: 460px) {
+    .nav-left {
+    float: none;
+    text-align: center;
+}
+
+.nav-right {
+    float: none;
+    text-align: center;
+    padding-top: 25px;
+}
+.mainHeader {
+    margin: 20px 20px;   
+}
+
+
+}
