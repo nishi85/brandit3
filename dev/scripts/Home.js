@@ -18,7 +18,7 @@ const Home = (props) => {
     <div className="home-container">
       <div className="home">
         <div className="home-left">
-          <img src="./dev/assets/brandItLogoOrange.png" alt="" />
+          <img src="./public/assets/brandItLogoOrange.png" alt="" />
           <h2>Brandit</h2>
           <p>
             Welcome to BrandIt - your one stop shop for bespoke logo's and custom branding. Get started below.
