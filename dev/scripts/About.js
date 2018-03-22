@@ -8,7 +8,7 @@ class About extends React.Component {
             <div className="about-container">
                 <div className="about">
                     <div className="about-image">
-                        <img src="./dev/assets/brandItLogoOrange.png" alt="" />
+                        <img src="./public/assets/brandItLogoOrange.png" alt="" />
                     </div>
                     <div className="about-text">
                         <H2Text className={'mainFont'} text={'About BrandIt'} />
