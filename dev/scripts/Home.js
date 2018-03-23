@@ -30,7 +30,7 @@ const Home = (props) => {
             : 
             // null
             // <Link to="/signin">Sign In</Link>
-            <Link to="/signin"><button className="link-btn">Sign In</button></Link>
+            <Link to="/signin"><button className="link-btn">Get Started</button></Link>
           }
         </div>
         <div className="home-right">
