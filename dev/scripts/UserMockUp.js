@@ -10,10 +10,10 @@ class UserMockUp extends React.Component {
             name: "",
             logo: "",
             color: "",
-            finalChoice: "",
-            finalName: "",
-            finalLogo: "",
-            finalColor: ""
+            finalChoice: [],
+            finalName: [],
+            finalLogo: [],
+            finalColor: []
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -43,22 +43,45 @@ class UserMockUp extends React.Component {
         });
     }
     handleSubmit(e) {
+        // e.preventDefault();
+        //  const color = this.state.color;
+        //  const userId = firebase.auth().currentUser.uid;
+        //  const dbref7 = firebase.database().ref(`/users/${userId}/color`);
+        //  dbref7.set(color);
+        //  const logo = this.state.logo;
+        //  const dbref8 = firebase.database().ref(`/users/${userId}/logo`);
+        //  dbref8.set(logo);
+        //  this.setState({
+        //      color: color,
+        //      logo: logo
+        //  });
+
         e.preventDefault();
-         const color = this.state.color;
          const userId = firebase.auth().currentUser.uid;
-         const dbref7 = firebase.database().ref(`/users/${userId}/color`);
-         dbref7.set(color);
+         const color = this.state.color;
+         const dbref7 = firebase.database().ref(`/users/${userId}/finalColor`);
+         dbref7.push(color);
          const logo = this.state.logo;
-         const dbref8 = firebase.database().ref(`/users/${userId}/logo`);
-         dbref8.set(logo);
+         const dbref8 = firebase.database().ref(`/users/${userId}/finalLogo`);
+         dbref8.push(logo);
+         const name = this.state.name;
+         const dbref9 = firebase.database().ref(`/users/${userId}/finalName`);
+         dbref9.push(name);
+         const choice = this.state.choice;
+         const dbref10 = firebase.database().ref(`/users/${userId}/finalChoice`);
+         dbref10.push(choice);
          this.setState({
              color: color,
-             logo: logo
+             logo: logo,
+             name: name,
+             choice: choice
+
          });
+
     }
     render() {
         return <div className="userMockUp-container">
-        <h3> Scroll down to see your mockups. You can save the final design by clicking the 'save my profile' button below. Design will be saved to the 'my brands' section.</h3>
+        <h3 class="mockUpHeader"> Scroll down to see your mockups. You can save the final design by clicking the 'save my profile' button below. Design will be saved to the 'my brands' section.</h3>
             <div className="tshirt-container">
                 <img className="tshirt" src="./dev/assets/tshirt.png" alt="" />
                 <div className="logoMark-container-tshirt">
