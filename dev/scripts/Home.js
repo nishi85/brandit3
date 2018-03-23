@@ -27,8 +27,10 @@ const Home = (props) => {
             <Link to={`/UserInputText`}>
               <button className="link-btn"> Get Started </button>
             </Link>
-            :
-            <Link to="/signin" className="link-btn"><button className="link-btn">Sign In</button></Link>
+            : 
+            // null
+            // <Link to="/signin">Sign In</Link>
+            <Link to="/signin"><button className="link-btn">Sign In</button></Link>
           }
         </div>
         <div className="home-right">

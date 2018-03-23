@@ -28,8 +28,10 @@ class UserMockUp extends React.Component {
             });
         });
         const colorState = this.props.location.state.color;
+        const logoStyle = this.props.location.state.logo;
         this.setState({
-            color: colorState
+            color: colorState,
+            logo: logoStyle
         });
         const dbref2 = firebase.database().ref(`/users/${userId}/name`);
         dbref2.on("value", snapshot => {
@@ -39,39 +41,24 @@ class UserMockUp extends React.Component {
                 name: data
             });
         });
-        const dbref3 = firebase.database().ref(`/users/${userId}/logo`);
-        dbref3.on("value", snapshot => {
-            const data = snapshot.val();
-            console.log(data);
-            this.setState({
-                logo: data
-            });
-        });
     }
     handleSubmit(e) {
         e.preventDefault();
-        // const choice = this.state.choice;
-        // const name = this.state.name;
-        // const logo = this.state.logo;
          const color = this.state.color;
          const userId = firebase.auth().currentUser.uid;
-        // const dbref4 = firebase.database().ref(`/users/${userId}/finalChoice`);
-        // const dbref5 = firebase.database().ref(`/users/${userId}/finalName`);
-        // const dbref6 = firebase.database().ref(`/users/${userId}/finalLogo`);
          const dbref7 = firebase.database().ref(`/users/${userId}/color`);
-        // dbref4.set(choice);
-        // dbref5.set(name);
-        // dbref6.set(logo);
          dbref7.set(color);
+         const logo = this.state.logo;
+         const dbref8 = firebase.database().ref(`/users/${userId}/logo`);
+         dbref8.set(logo);
          this.setState({
-        //     finalChoice: choice,
-        //     finalName: name,
-        //     finalLogo: logo,
-             color: color
+             color: color,
+             logo: logo
          });
     }
     render() {
         return <div className="userMockUp-container">
+        <h3> Scroll down to see your mockups. You can save the final design by clicking the 'save my profile' button below. Design will be saved to the 'my brands' section.</h3>
             <div className="tshirt-container">
                 <img className="tshirt" src="./dev/assets/tshirt.png" alt="" />
                 <div className="logoMark-container-tshirt">
@@ -136,7 +123,7 @@ class UserMockUp extends React.Component {
                 </div>
             </div>
             <div className="btnHolder">
-                <button onClick={this.handleSubmit} className="link-btn">Save my profile</button>
+                <button onClick={this.handleSubmit} className="link-btn">Save My Profile</button>
             </div>
         </div>;
     }

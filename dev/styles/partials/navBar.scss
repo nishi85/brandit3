@@ -21,6 +21,7 @@ li {
     display: inline;
     margin: 10px;
     position: relative;
+    transition:  0.5s all;
     a:hover::before {
             position: absolute;
             content: '';
@@ -33,19 +34,22 @@ li {
         }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 550px) {
     .nav-left {
-    float: none;
-    text-align: center;
+    // float: none;
+    // text-align: center;
+    width:25%;
 }
 
 .nav-right {
-    float: none;
-    text-align: center;
-    padding-top: 25px;
+    // float: none;
+    // text-align: center;
+    padding-left: 25px;
+    width: 75%;
 }
 .mainHeader {
     margin: 20px 20px;   
+    width: 100%;
 }
 
 

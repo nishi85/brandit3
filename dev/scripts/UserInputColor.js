@@ -32,14 +32,12 @@ class UserInputColor extends React.Component {
         this.setState({
             selectedMainColor: e.target.value
         })
-        console.log(e.target.value);
     }
 
 
     colorSubmit(e) {
         e.preventDefault();
         const color = this.state.selectedMainColor;
-        console.log("colorSubmit")
         this.setState({
             selectedMainColor: color
         })
@@ -49,7 +47,7 @@ class UserInputColor extends React.Component {
         return (
             <div className="UserInputColorContainer wrapper">
                 <form action="" className="colorForm" onSubmit={this.colorSubmit} className="content-container">
-                    <H2Text className={'mainFont'} text={'Select a Font Color for your Company Title'} />
+                    <h2> Select a Font Colour for your design. Click on the <img src="./public/assets/arrow.svg" alt="" /> to proceed.</h2>
                     <div className="mainColor">
                         <div className="radio main-color-div">
                             <input type="radio" name="mainColor" value="color-one" id="layoutOne" onChange={this.handleOptionChange} />

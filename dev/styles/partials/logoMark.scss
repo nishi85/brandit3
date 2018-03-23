@@ -1,6 +1,19 @@
 .userLogoMark-container {
      padding-left: 0%;
      margin-top: 10%;
+     .logoMarkHeader {
+        color:$grey;
+        text-transform: capitalize;
+        text-align: center;
+        width: 50%;
+        margin: 50px auto;
+        margin-top: 100px;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+
+
 }
 
 .logo-01-mark,

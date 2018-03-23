@@ -1,3 +1,18 @@
+.userMockUp-container {
+         h3 {
+        color:$grey;
+        text-transform: capitalize;
+        text-align: center;
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 100px;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+}
+
+
 .tshirt-container,
 .stationary-container {
     position: relative;
@@ -151,5 +166,9 @@
 
 .btnHolder {
     margin: 0 auto;
+    width: 25%;
+    button {
+        margin: 0 auto;
+    }
 }
 

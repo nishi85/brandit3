@@ -127,6 +127,7 @@ class UserInputText extends React.Component {
 
   render() {
     return <div className="uitWrapper clearfix">
+    <h3>Enter your company's name and 3 nouns associated with your company and click 'search'. Please click on the <img src="./public/assets/arrow.svg" alt="" /> when it appears on the right of your display (might take a few seconds). </h3>
       <form className="clearfix" onSubmit={this.handleSubmit}>
         <label htmlFor="query" className="mainFont">Your Company Name: </label>
         <input type="text" value={this.state.companyName} maxLength="15" onChange={this.handleChange} id="companyName" required />

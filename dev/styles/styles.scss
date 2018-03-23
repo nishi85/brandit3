@@ -70,6 +70,14 @@ button {
         transition: all .5s ease-in-out;
     }
 }
+
+.linkContainer img,
+.link-container img {
+    transition: all 0.7s;
+    &:hover {
+         transform: scale(1.15);
+    }
+}
 .link-btn, .button {
     background: #e59319;
     font-family: $heading;

@@ -149,7 +149,8 @@ ul {
 li {
   display: inline;
   margin: 10px;
-  position: relative; }
+  position: relative;
+  transition: 0.5s all; }
   li a:hover::before {
     position: absolute;
     content: '';
@@ -160,16 +161,15 @@ li {
     width: 100%;
     background: #e59319; }
 
-@media (max-width: 460px) {
+@media (max-width: 550px) {
   .nav-left {
-    float: none;
-    text-align: center; }
+    width: 25%; }
   .nav-right {
-    float: none;
-    text-align: center;
-    padding-top: 25px; }
+    padding-left: 25px;
+    width: 75%; }
   .mainHeader {
-    margin: 20px 20px; } }
+    margin: 20px 20px;
+    width: 100%; } }
 
 .home,
 .about,
@@ -450,11 +450,20 @@ li {
 
 .uitWrapper {
   width: 100%; }
+  .uitWrapper h3 {
+    color: #666666;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 24px; }
   .uitWrapper form {
     width: 45%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 200px; }
+    padding-top: 15px; }
     .uitWrapper form label {
       width: 100%;
       margin: 0 auto;
@@ -478,10 +487,16 @@ li {
     .uitWrapper form .btnHolder {
       text-align: center;
       width: 100%;
-      padding-top: 50px; }
+      padding-top: 50px;
+      margin: 0 auto; }
       .uitWrapper form .btnHolder input[type="submit"] {
         width: 200px;
-        height: 35px; }
+        height: 35px;
+        border: 1px solid black;
+        transition: 0.5s all; }
+        .uitWrapper form .btnHolder input[type="submit"]:hover {
+          color: #e59319;
+          background: white; }
   .uitWrapper .linkContainer {
     width: 5%;
     float: left;
@@ -491,13 +506,18 @@ li {
     transform: translate(-50%, -50%); }
 
 @media (max-width: 460px) {
+  h3 {
+    font-size: 12px;
+    line-height: 0; }
   input#query, input#query2, input#query3 {
     width: 100%;
     float: none; }
   input#query2 {
     margin-left: 0; }
-  .uitWrapper form {
-    padding-top: 80px; } }
+  .uitWrapper form .btnHolder input[type="submit"] {
+    width: 150px;
+    height: 35px;
+    margin: 0 auto; } }
 
 .uliWrapper {
   width: 100%;
@@ -506,6 +526,14 @@ li {
   @media (max-width: 600px) {
     .uliWrapper {
       padding-top: 25px; } }
+  .uliWrapper h3 {
+    color: #666666;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 24px; }
   .uliWrapper h2 {
     text-align: center; }
   .uliWrapper .logoSelector {
@@ -570,6 +598,16 @@ li {
 @media (max-width: 600px) {
   .logoContainer {
     width: 60%; } }
+
+.userMockUp-container h3 {
+  color: #666666;
+  text-transform: capitalize;
+  text-align: center;
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 100px;
+  font-size: 16px;
+  line-height: 24px; }
 
 .tshirt-container,
 .stationary-container {
@@ -689,11 +727,23 @@ li {
     top: 40px; }
 
 .btnHolder {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 25%; }
+  .btnHolder button {
+    margin: 0 auto; }
 
 .userLogoMark-container {
   padding-left: 0%;
   margin-top: 10%; }
+  .userLogoMark-container .logoMarkHeader {
+    color: #666666;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 24px; }
 
 .logo-01-mark,
 .logo-02-mark,
@@ -802,6 +852,13 @@ button {
   button:hover {
     transform: scale(1.05);
     transition: all .5s ease-in-out; }
+
+.linkContainer img,
+.link-container img {
+  transition: all 0.7s; }
+  .linkContainer img:hover,
+  .link-container img:hover {
+    transform: scale(1.15); }
 
 .link-btn, .button {
   background: #e59319;
@@ -965,395 +1022,3 @@ button {
     .myBrands,
     .contact {
       padding: 50px 0; } }
-
-.userLogoMark-container {
-  padding-left: 0%;
-  margin-top: 10%; }
-
-.logo-01-mark,
-.logo-02-mark,
-.logo-03-mark {
-  width: 250px;
-  position: relative; }
-  .logo-01-mark img,
-  .logo-02-mark img,
-  .logo-03-mark img {
-    width: 100%; }
-
-.logo-01 {
-  width: 40px;
-  position: absolute;
-  top: 110px;
-  left: 50px; }
-  .logo-01 img {
-    width: 100%; }
-
-.logo-01-icon {
-  width: 40px;
-  position: absolute;
-  top: 110px;
-  left: 150px; }
-  .logo-01-icon img {
-    width: 100%; }
-
-.logo-02 {
-  width: 40px;
-  position: absolute;
-  top: 153px;
-  left: 100px; }
-  .logo-02 img {
-    width: 100%; }
-
-.logo-02-icon {
-  width: 40px;
-  position: absolute;
-  top: 60px;
-  left: 100px; }
-  .logo-02-icon img {
-    width: 100%; }
-
-.logo-03 {
-  width: 40px;
-  position: absolute;
-  top: 95px;
-  left: 100px; }
-  .logo-03 img {
-    width: 100%; }
-
-.label-logoMark {
-  display: block;
-  margin: 20px;
-  float: left;
-  text-align: center;
-  transition: all .5s ease-in-out; }
-
-input.checked[type="radio"] {
-  visibility: hidden; }
-
-.userLogoMark-container input[type="radio"]:checked + label {
-  border: 3px solid black;
-  transform: scale(1.1); }
-
-.userLogoMark-container .link-btn {
-  display: block;
-  margin: 0 auto;
-  clear: both; }
-
-.tshirt-container,
-.stationary-container {
-  position: relative; }
-  .tshirt-container .tshirt,
-  .tshirt-container .stationary,
-  .stationary-container .tshirt,
-  .stationary-container .stationary {
-    padding-left: 50px;
-    padding-bottom: 50px; }
-  .tshirt-container .tshirt,
-  .stationary-container .tshirt {
-    width: 700px;
-    padding-left: 100px; }
-    @media (max-width: 750px) {
-      .tshirt-container .tshirt,
-      .stationary-container .tshirt {
-        width: 500px; } }
-    @media (max-width: 500px) {
-      .tshirt-container .tshirt,
-      .stationary-container .tshirt {
-        display: none; } }
-  .tshirt-container .stationary,
-  .stationary-container .stationary {
-    width: 800px; }
-    @media (max-width: 900px) {
-      .tshirt-container .stationary,
-      .stationary-container .stationary {
-        display: none; } }
-
-.logoMark-container-tshirt,
-.logoMark-container-stationary1,
-.logoMark-container-stationary2,
-.logoMark-container-stationary3 {
-  position: absolute; }
-
-.logoMark-container-tshirt {
-  width: 200px;
-  top: 300px;
-  left: 275px; }
-  @media (max-width: 500px) {
-    .logoMark-container-tshirt {
-      position: static;
-      padding-left: 50px;
-      padding-top: 100px; } }
-  @media (max-width: 750px) {
-    .logoMark-container-tshirt {
-      top: 200px;
-      left: 150px; } }
-
-.logoMark-container-stationary1 {
-  width: 90px;
-  top: 110px;
-  left: 120px; }
-  @media (max-width: 900px) {
-    .logoMark-container-stationary1 {
-      display: none; } }
-  .logoMark-container-stationary1 .logo-01-mark {
-    width: auto; }
-  .logoMark-container-stationary1 .logo-01 {
-    width: 20px;
-    left: 15px;
-    top: 35px; }
-  .logoMark-container-stationary1 .logo-01-icon {
-    width: 20px;
-    left: 54px;
-    top: 35px; }
-  .logoMark-container-stationary1 .logo-02-mark {
-    width: auto; }
-  .logoMark-container-stationary1 .logo-02 {
-    width: 15px;
-    left: 36.5px;
-    top: 20px; }
-  .logoMark-container-stationary1 .logo-02-icon {
-    width: 15px;
-    left: 36.5px;
-    top: 55px; }
-  .logoMark-container-stationary1 .logo-03-mark {
-    width: auto; }
-  .logoMark-container-stationary1 .logo-03 {
-    width: 25px;
-    left: 33px;
-    top: 27px; }
-
-.logoMark-container-stationary2 {
-  width: 120px;
-  top: 330px;
-  left: 515px; }
-  @media (max-width: 900px) {
-    .logoMark-container-stationary2 {
-      display: none; } }
-  .logoMark-container-stationary2 .logo-01-mark {
-    width: auto; }
-  .logoMark-container-stationary2 .logo-01 {
-    width: 30px;
-    left: 16px;
-    top: 45px; }
-  .logoMark-container-stationary2 .logo-01-icon {
-    width: 30px;
-    left: 71px;
-    top: 45px; }
-  .logoMark-container-stationary2 .logo-02-mark {
-    width: auto; }
-  .logoMark-container-stationary2 .logo-02 {
-    width: 25px;
-    left: 47.5px;
-    top: 25px; }
-  .logoMark-container-stationary2 .logo-02-icon {
-    width: 25px;
-    left: 47.5px;
-    top: 70px; }
-  .logoMark-container-stationary2 .logo-03-mark {
-    width: auto; }
-  .logoMark-container-stationary2 .logo-03 {
-    width: 25px;
-    left: 47px;
-    top: 40px; }
-
-.btnHolder {
-  margin: 0 auto; }
-
-.mainHeader {
-  margin: 20px 50px;
-  height: 20px; }
-
-.nav-left {
-  float: left; }
-
-.nav-right {
-  float: right; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-li {
-  display: inline;
-  margin: 10px;
-  position: relative; }
-  li a:hover::before {
-    position: absolute;
-    content: '';
-    height: 2px;
-    margin: 0 auto;
-    left: 0;
-    top: 25px;
-    width: 100%;
-    background: #e59319; }
-
-@media (max-width: 460px) {
-  .nav-left {
-    float: none;
-    text-align: center; }
-  .nav-right {
-    float: none;
-    text-align: center;
-    padding-top: 25px; }
-  .mainHeader {
-    margin: 20px 20px; } }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-  display: block; }
-
-audio, canvas, video {
-  display: inline-block; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden] {
-  display: none; }
-
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-a:focus {
-  outline: thin dotted; }
-
-a:active, a:hover {
-  outline: 0; }
-
-h1 {
-  font-size: 2em; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b, strong {
-  font-weight: 700; }
-
-dfn {
-  font-style: italic; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-q {
-  quotes: \201C \201D \2018 \2019; }
-
-small {
-  font-size: 80%; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -.5em; }
-
-sub {
-  bottom: -.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: .35em .625em .75em; }
-
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0; }
-
-button, input {
-  line-height: normal; }
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled], input[disabled] {
-  cursor: default; }
-
-input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type=search] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-textarea {
-  overflow: auto;
-  vertical-align: top; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body, figure {
-  margin: 0; }
-
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0; }
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.log-in-launch {
-  padding: 100px; }
-  @media (max-width: 500px) {
-    .log-in-launch {
-      padding: 50px 0;
-      text-align: center; } }
-
-.slider {
-  max-width: 100%; }
-  @media (max-width: 500px) {
-    .slider {
-      width: 95%; } }
-  .slider img {
-    width: 100%;
-    height: auto; }
-
-.slick-slide {
-  margin: 0; }
-
-.slick-list {
-  max-height: 351px;
-  max-width: 100%; }
-
-.slider-img-container {
-  width: 100%; }

@@ -26,6 +26,7 @@ class UserLogoIcon extends React.Component {
 
   render() {
     return <div className="uliWrapper clearfix">
+    <h3> Click on an icon to make your selection. Click on the <img src="./public/assets/arrow.svg" alt="" /> to proceed.</h3>
       <div className="logoSelector clearfix">
         <h2>Choose your logo icon:</h2>
 

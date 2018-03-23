@@ -61,13 +61,15 @@ class UserLogoMark extends React.Component {
 
         dbref.set(logo);
         this.setState({
-            logoState: true
+            logoState: true,
+            logoStyle: logo
         });
     }
 
     render() {
         return (
-            <div className="userLogoMark-container">
+            <div className="userLogoMark-container" action="">
+            <h3 className="logoMarkHeader"> Click on a design to make a selection. Click on the <img src="./public/assets/arrow.svg" alt="" /> to proceed.</h3>
                 <form onSubmit={this.handleSubmit}>
                         <input className="checked" type="radio" checked value="option1" id="opt1" onChange={this.handleChange} checked={this.state.logoStyle === "option1"} />
                     <label className="label-logoMark" htmlFor="opt1">
@@ -81,14 +83,15 @@ class UserLogoMark extends React.Component {
                     <label className="label-logoMark" htmlFor="opt3">
                         <LogoMarkThree choice={this.state.choice} name={this.state.name} color={this.state.color} />
                     </label>
-                    <input type="submit" value="Choose an Icon" className="link-btn"/>
+                    {/* <input type="submit" value="Choose an Icon" className="link-btn"/> */}
                 </form>
                 <div className="link-container">
                     <Link to={
                             {
                                 pathname: "/UserMockUp",
                                 state: {
-                                    color: this.state.color
+                                    color: this.state.color,
+                                    logo: this.state.logoStyle
                                 }
                             }
                         }>
