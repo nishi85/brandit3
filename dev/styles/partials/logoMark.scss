@@ -16,6 +16,19 @@
 
 }
 
+.deleteBTN {
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s all;
+    color: rgb(180, 91, 91);
+    border-radius: 6.25em;
+    background: white;
+    outline: none;
+}
+
 .logo-01-mark,
 .logo-02-mark,
 .logo-03-mark {

@@ -745,6 +745,18 @@ li {
     font-size: 16px;
     line-height: 24px; }
 
+.deleteBTN {
+  width: 150px;
+  height: 35px;
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s all;
+  color: #b45b5b;
+  border-radius: 6.25em;
+  background: white;
+  outline: none; }
+
 .logo-01-mark,
 .logo-02-mark,
 .logo-03-mark {

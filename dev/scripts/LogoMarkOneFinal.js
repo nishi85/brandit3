@@ -1,0 +1,26 @@
+import React from "react";
+
+const LogoMarkOneFinal = (props) => {
+    
+
+
+
+
+    
+    return <div className="logo-01-mark">
+        <img src="./public/assets/logo-01.svg" alt="" />
+        <div className="logo-01">
+          <img src={props.choice} alt="" />
+        </div>
+        <div className="logo-01-icon">
+          <img src={props.choice} alt="" />
+        </div>
+        <h3 className={props.color}>{props.name}</h3>
+
+        <button className="deleteBTN" onClick={() => props.remove(props.choiceKey, props.nameKey, props.colorKey, props.logoKey)}>
+          Delete
+        </button>
+      </div>;
+}
+
+export default LogoMarkOneFinal;

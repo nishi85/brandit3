@@ -43,18 +43,6 @@ class UserMockUp extends React.Component {
         });
     }
     handleSubmit(e) {
-        // e.preventDefault();
-        //  const color = this.state.color;
-        //  const userId = firebase.auth().currentUser.uid;
-        //  const dbref7 = firebase.database().ref(`/users/${userId}/color`);
-        //  dbref7.set(color);
-        //  const logo = this.state.logo;
-        //  const dbref8 = firebase.database().ref(`/users/${userId}/logo`);
-        //  dbref8.set(logo);
-        //  this.setState({
-        //      color: color,
-        //      logo: logo
-        //  });
 
         e.preventDefault();
          const userId = firebase.auth().currentUser.uid;
