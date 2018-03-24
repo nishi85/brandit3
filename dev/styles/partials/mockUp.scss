@@ -167,8 +167,20 @@
 .btnHolder {
     margin: 0 auto;
     width: 25%;
+    outline: none;
+    
     button {
         margin: 0 auto;
-    }
-}
+        border: 1px solid black;
+         &:hover {
+                color: $yellow;
+                background: white;     
+                 }
+         &:disabled {
+            transform: none;
+            background: lightgrey;
+            color: grey;
 
+         }        
+}
+}

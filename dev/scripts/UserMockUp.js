@@ -13,7 +13,8 @@ class UserMockUp extends React.Component {
             finalChoice: [],
             finalName: [],
             finalLogo: [],
-            finalColor: []
+            finalColor: [],
+            isButtonDisabled: false
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -62,81 +63,89 @@ class UserMockUp extends React.Component {
              color: color,
              logo: logo,
              name: name,
-             choice: choice
+             choice: choice,
+             isButtonDisabled: true
 
          });
 
     }
     render() {
         return <div className="userMockUp-container">
-        <h3 class="mockUpHeader"> Scroll down to see your mockups. You can save the final design by clicking the 'save my profile' button below. Design will be saved to the 'my brands' section.</h3>
+            <h3 class="mockUpHeader">
+              {" "}
+              Scroll down to see your mockups. You can save the final
+              design by clicking the 'save my profile' button below.
+              Design will be saved to the 'my brands' section.
+            </h3>
             <div className="tshirt-container">
-                <img className="tshirt" src="./dev/assets/tshirt.png" alt="" />
-                <div className="logoMark-container-tshirt">
-                    {this.state.logo === "option1" ? (
-                        <LogoMarkOne
-                            choice={this.state.choice}
-                            name={this.state.name}
-                            color={this.state.color}
-                        />
-                    ) : this.state.logo === "option2" ? (
-                        <LogoMarkTwo
-                            choice={this.state.choice}
-                            name={this.state.name}
-                            color={this.state.color}
-                        />
-                    ) : (
-                                <LogoMarkThree
-                                    choice={this.state.choice}
-                                    name={this.state.name}
-                                    color={this.state.color}
-                                />
-                            )}
-                </div>
+              <img className="tshirt" src="./dev/assets/tshirt.png" alt="" />
+              <div className="logoMark-container-tshirt">
+                {this.state.logo === "option1" ? (
+                  <LogoMarkOne
+                    choice={this.state.choice}
+                    name={this.state.name}
+                    color={this.state.color}
+                  />
+                ) : this.state.logo === "option2" ? (
+                  <LogoMarkTwo
+                    choice={this.state.choice}
+                    name={this.state.name}
+                    color={this.state.color}
+                  />
+                ) : (
+                  <LogoMarkThree
+                    choice={this.state.choice}
+                    name={this.state.name}
+                    color={this.state.color}
+                  />
+                )}
+              </div>
             </div>
             <div className="stationary-container">
-                <img className="stationary" src="./dev/assets/03.jpg" alt="" />
-                <div className="logoMark-container-stationary1 ">
-                    {this.state.logo === "option1" ? (
-                        <LogoMarkOne
-                            choice={this.state.choice}
-                            color={this.state.color}
-                        />
-                    ) : this.state.logo === "option2" ? (
-                        <LogoMarkTwo
-                            choice={this.state.choice}
-                            color={this.state.color}
-                        />
-                    ) : (
-                                <LogoMarkThree
-                                    choice={this.state.choice}
-                                    color={this.state.color}
-                                />
-                            )}
-                </div>
-                <div className="logoMark-container-stationary2">
-                    {this.state.logo === "option1" ? (
-                        <LogoMarkOne
-                            choice={this.state.choice}
-                            color={this.state.color}
-                        />
-                    ) : this.state.logo === "option2" ? (
-                        <LogoMarkTwo
-                            choice={this.state.choice}
-                            color={this.state.color}
-                        />
-                    ) : (
-                                <LogoMarkThree
-                                    choice={this.state.choice}
-                                    color={this.state.color}
-                                />
-                            )}
-                </div>
+              <img className="stationary" src="./dev/assets/03.jpg" alt="" />
+              <div className="logoMark-container-stationary1 ">
+                {this.state.logo === "option1" ? (
+                  <LogoMarkOne
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                ) : this.state.logo === "option2" ? (
+                  <LogoMarkTwo
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                ) : (
+                  <LogoMarkThree
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                )}
+              </div>
+              <div className="logoMark-container-stationary2">
+                {this.state.logo === "option1" ? (
+                  <LogoMarkOne
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                ) : this.state.logo === "option2" ? (
+                  <LogoMarkTwo
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                ) : (
+                  <LogoMarkThree
+                    choice={this.state.choice}
+                    color={this.state.color}
+                  />
+                )}
+              </div>
             </div>
             <div className="btnHolder">
-                <button onClick={this.handleSubmit} className="link-btn">Save My Profile</button>
+              <button onClick={this.handleSubmit} disabled={this.state.isButtonDisabled} className="link-btn">
+                Save My Profile
+              </button>
             </div>
-        </div>;
+          </div>;
     }
 }
 export default UserMockUp;

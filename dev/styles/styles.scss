@@ -66,6 +66,7 @@ a {
 button {
     border: none;
     background-color: none;
+    outline: none;
     &:hover {
         transform: scale(1.05);
         transition: all .5s ease-in-out;

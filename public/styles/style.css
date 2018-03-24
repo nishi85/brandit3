@@ -493,7 +493,8 @@ li {
         width: 200px;
         height: 35px;
         border: 1px solid black;
-        transition: 0.5s all; }
+        transition: 0.5s all;
+        outline: none; }
         .uitWrapper form .btnHolder input[type="submit"]:hover {
           color: #e59319;
           background: white; }
@@ -728,9 +729,18 @@ li {
 
 .btnHolder {
   margin: 0 auto;
-  width: 25%; }
+  width: 25%;
+  outline: none; }
   .btnHolder button {
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 1px solid black; }
+    .btnHolder button:hover {
+      color: #e59319;
+      background: white; }
+    .btnHolder button:disabled {
+      transform: none;
+      background: lightgrey;
+      color: grey; }
 
 .userLogoMark-container {
   padding-left: 0%;
@@ -870,7 +880,8 @@ a {
 
 button {
   border: none;
-  background-color: none; }
+  background-color: none;
+  outline: none; }
   button:hover {
     transform: scale(1.05);
     transition: all .5s ease-in-out; }

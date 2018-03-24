@@ -62,6 +62,7 @@
             height: 35px;
             border: 1px solid black;
             transition: 0.5s all;
+             outline: none;
             &:hover {
                 color: $yellow;
                 background: white;
